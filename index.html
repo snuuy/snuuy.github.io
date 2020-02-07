@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156512368-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156512368-2');
+  </script>
+
   <meta charset="utf-8">
   <meta name="description" content="Personal portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +23,6 @@
   <link rel="manifest" href="favicon/site.webmanifest">
 
   <link href="css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/icon.png"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
@@ -32,7 +41,7 @@
     <a href="https://github.com/snuuy" target="_blank"><i class="fab fa-github pr-2"></i></a>
     <a href="mailto:sunnynbhatt@gmail.com" target="_blank"><i class="fas fa-envelope pr-2"></i></a>
     <a href="Resume.pdf" target="_blank"><div class="btn btn-sm btn-light" style="margin-top: -4px">Resume</div></a>
-    <div class="btn btn-sm btn-info" style="margin-top: -4px" id="toggleBtn">Portfolio <i id="toggleIcon" class="fas fa-chevron-down"></i></div>
+    <div class="btn btn-sm btn-info" style="margin-top: -4px" id="toggleBtn" onClick="gtag('event', 'Toggle Portfolio');">Portfolio <i id="toggleIcon" class="fas fa-chevron-down"></i></div>
   </div>
   <div class="row px-4" id="portfolio" style="display:none">
     <div class="col-12 col-md-6 col-lg-4 mb-3 mt-3">
